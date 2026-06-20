@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,8 +22,15 @@
             padding: 20px;
         }
 
-        header { text-align: center; margin-bottom: 30px; }
-        h1 { color: var(--primary); margin-bottom: 10px; }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
 
         /* --- CONTROLS --- */
         .controls {
@@ -45,15 +53,38 @@
             border-radius: 5px;
             font-weight: bold;
             transition: 0.2s;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        button:active { transform: translateY(1px); }
 
-        .btn-create { background-color: var(--primary); color: rgb(255, 255, 255); }
-        .btn-save { background-color: #8e44ad; color: white; }
-        .btn-import { background-color: #2980b9; color: white; }
-        .btn-txt { background-color: #e67e22; color: white; } /* Orange for TXT */
-        .btn-pdf { background-color: #c0392b; color: white; }
+        button:active {
+            transform: translateY(1px);
+        }
+
+        .btn-create {
+            background-color: var(--primary);
+            color: rgb(255, 255, 255);
+        }
+
+        .btn-save {
+            background-color: #8e44ad;
+            color: white;
+        }
+
+        .btn-import {
+            background-color: #2980b9;
+            color: white;
+        }
+
+        .btn-txt {
+            background-color: #e67e22;
+            color: white;
+        }
+
+        /* Orange for TXT */
+        .btn-pdf {
+            background-color: #c0392b;
+            color: white;
+        }
 
         /* --- CONTAINERS --- */
         #bible-container {
@@ -78,6 +109,7 @@
             gap: 2px;
             margin-right: 5px;
         }
+
         .arrow-btn {
             background: #ecf0f1;
             border: 1px solid #bdc3c7;
@@ -86,7 +118,10 @@
             cursor: pointer;
             line-height: 1;
         }
-        .arrow-btn:hover { background: #bdc3c7; }
+
+        .arrow-btn:hover {
+            background: #bdc3c7;
+        }
 
         /* --- BOOKS --- */
         .book {
@@ -97,8 +132,14 @@
             background: #fdfdfd;
             border-bottom: 1px solid #eee;
         }
-        
-        .book-header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+
+        .book-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
         .book-title {
             font-size: 1.3em;
             font-weight: bold;
@@ -118,20 +159,42 @@
             margin-bottom: 10px;
         }
 
-        .chapter-header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
-        .chapter-title { font-weight: bold; color: #c0392b; width: 150px; border:none; border-bottom: 1px dashed #e74c3c;}
+        .chapter-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .chapter-title {
+            font-weight: bold;
+            color: #c0392b;
+            width: 150px;
+            border: none;
+            border-bottom: 1px dashed #e74c3c;
+        }
 
         /* --- VERSES & SUBHEADINGS --- */
-        .content-list { margin-left: 10px; display: flex; flex-direction: column; gap: 5px; }
-        
-        .verse-row, .subheading-row {
+        .content-list {
+            margin-left: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .verse-row,
+        .subheading-row {
             display: flex;
             align-items: flex-start;
             gap: 8px;
             padding: 5px;
             border-radius: 4px;
         }
-        .verse-row:hover, .subheading-row:hover { background-color: #f8f9fa; }
+
+        .verse-row:hover,
+        .subheading-row:hover {
+            background-color: #f8f9fa;
+        }
 
         .verse-num {
             font-weight: bold;
@@ -184,10 +247,25 @@
             align-items: center;
             font-size: 14px;
         }
-        .btn-add-v { background-color: var(--accent); }
-        .btn-add-h { background-color: #f39c12; font-weight: bold; font-family: serif; }
-        .btn-del { background-color: transparent; color: #999; }
-        .btn-del:hover { color: red; }
+
+        .btn-add-v {
+            background-color: var(--accent);
+        }
+
+        .btn-add-h {
+            background-color: #f39c12;
+            font-weight: bold;
+            font-family: serif;
+        }
+
+        .btn-del {
+            background-color: transparent;
+            color: #999;
+        }
+
+        .btn-del:hover {
+            color: red;
+        }
 
         /* Areas at the bottom of the book */
         .add-chapter-area {
@@ -199,7 +277,7 @@
             flex-direction: column;
             gap: 10px;
         }
-        
+
         .btn-add-chapter-big {
             background-color: transparent;
             border: 2px dashed #e74c3c;
@@ -208,7 +286,10 @@
             padding: 8px;
             border-radius: 6px;
         }
-        .btn-add-chapter-big:hover { background-color: #fceceb; }
+
+        .btn-add-chapter-big:hover {
+            background-color: #fceceb;
+        }
 
         .btn-add-book-next {
             background-color: transparent;
@@ -218,7 +299,10 @@
             padding: 8px;
             border-radius: 6px;
         }
-        .btn-add-book-next:hover { background-color: #ebf5fb; }
+
+        .btn-add-book-next:hover {
+            background-color: #ebf5fb;
+        }
 
         .btn-min {
             background: transparent;
@@ -233,10 +317,32 @@
             align-items: center;
             justify-content: center;
         }
-        .btn-min:hover { background: #eee; }
 
+        .btn-min:hover {
+            background: #eee;
+        }
+
+        .btn-collapse-all {
+            background: transparent;
+            border: 1px solid #ccc;
+            color: #555;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            padding: 3px 8px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            white-space: nowrap;
+        }
+
+        .btn-collapse-all:hover {
+            background: #eee;
+        }
     </style>
 </head>
+
 <body>
 
     <header>
@@ -252,7 +358,8 @@
 
     <div id="bible-container"></div>
 
-    <div class="controls" style="position: static; border-bottom: none; border-top: 1px solid var(--border); margin-top: 20px;">
+    <div class="controls"
+        style="position: static; border-bottom: none; border-top: 1px solid var(--border); margin-top: 20px;">
         <button class="btn-create" onclick="addBibleUI()">+ New Bible</button>
         <button class="btn-import" onclick="document.getElementById('file-input').click()">📂 Import JSON</button>
     </div>
@@ -273,7 +380,7 @@
         function createBibleDOM(title = "") {
             const div = document.createElement('div');
             div.className = 'bible-wrapper item';
-            
+
             const header = document.createElement('div');
             header.className = 'bible-header';
             header.style.display = 'flex';
@@ -284,6 +391,7 @@
             content.innerHTML = `
                 <div style="display:flex; align-items:center; gap:10px;">
                     <input type="text" placeholder="Bible Name" class="bible-name" value="${title}" style="font-size:1.5em; font-weight:bold; flex-grow:1; border:none; border-bottom:2px solid #2c3e50;">
+                    <button class="btn-collapse-all" onclick="collapseAllBooks(this)" title="Minimize all books">📚 ▼</button>
                     <button class="btn-min" onclick="toggleSection(this)" title="Minimize">−</button>
                 </div>
                 <div style="margin-top:10px; display:flex; gap:5px;">
@@ -296,7 +404,7 @@
                     <button class="btn-del" onclick="this.closest('.bible-wrapper').remove()">Delete Bible</button>
                 </div>
             `;
-            
+
             const arrows = createArrows("moveItem(this, -1)", "moveItem(this, 1)");
             header.appendChild(arrows);
             header.appendChild(content);
@@ -320,6 +428,7 @@
                     </div>
                     <span>📚</span>
                     <input type="text" class="book-title" placeholder="Book Name" value="${title}">
+                    <button class="btn-collapse-all" onclick="collapseAllChapters(this)" title="Minimize all chapters">📖 ▼</button>
                     <button class="btn-min" onclick="toggleSection(this)" title="Minimize">−</button>
                     <button class="btn-del" onclick="this.closest('.book').remove()">x</button>
                 </div>
@@ -399,10 +508,10 @@
 
         function toggleSection(btn) {
             const parent = btn.closest('.item');
-            
+
             if (parent.classList.contains('bible-wrapper')) {
                 const cont = parent.querySelector('.books-container');
-                if(cont.style.display === 'none') {
+                if (cont.style.display === 'none') {
                     cont.style.display = 'block';
                     btn.textContent = '−';
                 } else {
@@ -424,6 +533,59 @@
             }
         }
 
+        function collapseAllBooks(btn) {
+            const bibleEl = btn.closest('.bible-wrapper');
+            const books = bibleEl.querySelectorAll('.book');
+            if (books.length === 0) return;
+
+            // Determine action: if ANY book is expanded, collapse all; otherwise expand all
+            const anyExpanded = Array.from(books).some(book => {
+                return book.querySelector('.chapters-container').style.display !== 'none';
+            });
+
+            books.forEach(book => {
+                const cont = book.querySelector('.chapters-container');
+                const addArea = book.querySelector('.add-chapter-area');
+                const minBtn = book.querySelector('.book-header > .btn-min');
+                if (anyExpanded) {
+                    cont.style.display = 'none';
+                    addArea.style.display = 'none';
+                    if (minBtn) minBtn.textContent = '+';
+                } else {
+                    cont.style.display = 'block';
+                    addArea.style.display = 'flex';
+                    if (minBtn) minBtn.textContent = '−';
+                }
+            });
+
+            btn.innerHTML = anyExpanded ? '📚 ▶' : '📚 ▼';
+        }
+
+        function collapseAllChapters(btn) {
+            const bookEl = btn.closest('.book');
+            const chapters = bookEl.querySelectorAll('.chapter');
+            if (chapters.length === 0) return;
+
+            // Determine action: if ANY chapter is expanded, collapse all; otherwise expand all
+            const anyExpanded = Array.from(chapters).some(chap => {
+                return chap.querySelector('.content-list').style.display !== 'none';
+            });
+
+            chapters.forEach(chap => {
+                const cont = chap.querySelector('.content-list');
+                const minBtn = chap.querySelector('.chapter-header > .btn-min');
+                if (anyExpanded) {
+                    cont.style.display = 'none';
+                    if (minBtn) minBtn.textContent = '+';
+                } else {
+                    cont.style.display = 'flex';
+                    if (minBtn) minBtn.textContent = '−';
+                }
+            });
+
+            btn.innerHTML = anyExpanded ? '📖 ▶' : '📖 ▼';
+        }
+
         function addBookUI(btn) {
             const container = btn.closest('.bible-wrapper').querySelector('.books-container');
             container.appendChild(createBookDOM());
@@ -433,7 +595,7 @@
             const currentBook = btn.closest('.book');
             const container = currentBook.parentElement;
             const newBook = createBookDOM();
-            
+
             if (currentBook.nextSibling) {
                 container.insertBefore(newBook, currentBook.nextSibling);
             } else {
@@ -446,7 +608,7 @@
             const count = container.querySelectorAll('.chapter').length + 1;
             const chap = createChapterDOM("Chapter " + count);
             container.appendChild(chap);
-            
+
             const list = chap.querySelector('.content-list');
             list.appendChild(createVerseDOM());
             renumberVerses(list);
@@ -455,7 +617,7 @@
         function addItemUI(btn, type) {
             const currentItem = btn.closest('.item');
             const container = currentItem.parentElement;
-            
+
             let newItem;
             if (type === 'verse') newItem = createVerseDOM();
             else newItem = createSubheadingDOM();
@@ -479,20 +641,20 @@
             const current = btn.closest('.item');
             const container = current.parentElement;
             const sibling = direction === -1 ? current.previousElementSibling : current.nextElementSibling;
-            
+
             if (!sibling) return;
 
             // 1. Record positions before move
             const currentRect = current.getBoundingClientRect();
             const siblingRect = sibling.getBoundingClientRect();
-            
+
             // 2. Perform DOM move
             if (direction === -1) {
                 container.insertBefore(current, sibling);
             } else {
                 container.insertBefore(sibling, current);
             }
-            
+
             if (current.classList.contains('verse-row') || current.classList.contains('subheading-row')) {
                 renumberVerses(container);
             }
@@ -549,11 +711,11 @@
                     bookEl.querySelectorAll('.chapter').forEach(chapEl => {
                         const chapter = {
                             chapter: chapterCount++,
-                            content: [] 
+                            content: []
                         };
                         let verseCount = 1;
                         chapEl.querySelectorAll('.content-list > .item').forEach(item => {
-                            if(item.dataset.type === 'verse') {
+                            if (item.dataset.type === 'verse') {
                                 chapter.content.push({
                                     verse: verseCount++,
                                     text: item.querySelector('.verse-text').value
@@ -575,13 +737,76 @@
 
         // --- 4. EXPORT / IMPORT JSON ---
 
+        function buildLSBData(targetBible = null) {
+            const sources = targetBible ? [targetBible] : document.querySelectorAll('.bible-wrapper');
+            const result = {};
+            sources.forEach(bibleEl => {
+                bibleEl.querySelectorAll('.book').forEach(bookEl => {
+                    const bookName = bookEl.querySelector('.book-title').value || 'Unnamed Book';
+                    result[bookName] = {};
+                    let chapterCount = 1;
+                    bookEl.querySelectorAll('.chapter').forEach(chapEl => {
+                        const chapKey = String(chapterCount++);
+                        const chapObj = {};
+                        let verseCount = 1;
+                        let headerCount = 1;
+                        chapEl.querySelectorAll('.content-list > .item').forEach(item => {
+                            if (item.dataset.type === 'verse') {
+                                chapObj[String(verseCount++)] = item.querySelector('.verse-text').value;
+                            } else {
+                                chapObj["h_" + headerCount++] = item.querySelector('input').value;
+                            }
+                        });
+                        result[bookName][chapKey] = chapObj;
+                    });
+                });
+            });
+            return result;
+        }
+
         function exportToJSON(btn) {
             const bibleEl = btn.closest('.bible-wrapper');
-            const data = buildData(bibleEl);
+            const data = buildLSBData(bibleEl);
+            const bibleName = bibleEl.querySelector('.bible-name').value || 'bible';
             let jsonStr = JSON.stringify(data, null, 2);
-            jsonStr = jsonStr.replace(/},\n/g, "},\n\n");
-            const fileName = (data[0].title || 'bible') + '.json';
+            const fileName = bibleName + '.json';
             downloadFile(jsonStr, fileName, 'application/json');
+        }
+
+        function isLSBFormat(data) {
+            if (typeof data !== 'object' || data === null || Array.isArray(data)) return false;
+            const keys = Object.keys(data);
+            if (keys.length === 0) return false;
+            const firstVal = data[keys[0]];
+            if (typeof firstVal !== 'object' || firstVal === null || Array.isArray(firstVal)) return false;
+            const innerKeys = Object.keys(firstVal);
+            if (innerKeys.length === 0) return true;
+            const innerVal = firstVal[innerKeys[0]];
+            return (typeof innerVal === 'object' && !Array.isArray(innerVal) && innerVal !== null);
+        }
+
+        function convertLSBToInternal(data, fileName) {
+            const bibleName = fileName ? fileName.replace(/\.json$/i, '') : 'Imported Bible';
+            const bible = { title: bibleName, books: [] };
+            Object.keys(data).forEach(bookName => {
+                const bookData = data[bookName];
+                const book = { book: bookName, chapters: [] };
+                const chapterKeys = Object.keys(bookData).sort((a, b) => parseInt(a) - parseInt(b));
+                chapterKeys.forEach(chapKey => {
+                    const chapData = bookData[chapKey];
+                    const chapter = { chapter: parseInt(chapKey), content: [] };
+                    Object.keys(chapData).forEach(key => {
+                        if (key.startsWith('h_')) {
+                            chapter.content.push({ header: chapData[key] });
+                        } else {
+                            chapter.content.push({ verse: parseInt(key), text: chapData[key] });
+                        }
+                    });
+                    book.chapters.push(chapter);
+                });
+                bible.books.push(book);
+            });
+            return [bible];
         }
 
         function importJSON(input) {
@@ -593,10 +818,12 @@
                     reader.onload = e => {
                         try {
                             const data = JSON.parse(e.target.result);
-                            if (!Array.isArray(data) || data.some(b => !b || typeof b !== 'object' || !Array.isArray(b.books))) {
-                                reject(new Error("Invalid structure"));
-                            } else {
+                            if (isLSBFormat(data)) {
+                                resolve(convertLSBToInternal(data, file.name));
+                            } else if (Array.isArray(data) && data.every(b => b && typeof b === 'object' && Array.isArray(b.books))) {
                                 resolve(data);
+                            } else {
+                                reject(new Error("Invalid structure"));
                             }
                         } catch (err) {
                             reject(err);
@@ -635,9 +862,9 @@
                         const chapTitle = ch.chapter ? "Chapter " + ch.chapter : ch.title;
                         const chapEl = createChapterDOM(chapTitle);
                         const list = chapEl.querySelector('.content-list');
-                        
-                        const contentArray = ch.content || ch.verses; 
-                        if(contentArray) {
+
+                        const contentArray = ch.content || ch.verses;
+                        if (contentArray) {
                             contentArray.forEach(item => {
                                 if (typeof item === 'string' || (item.type === undefined && item.text && !item.verse)) {
                                     const txt = typeof item === 'string' ? item : item.text;
@@ -663,16 +890,16 @@
             const bibleEl = btn.closest('.bible-wrapper');
             const data = buildData(bibleEl);
             let txtContent = "";
-            
+
             data.forEach(bible => {
                 txtContent += `=== ${bible.title.toUpperCase()} ===\n\n`;
                 bible.books.forEach(book => {
                     txtContent += `BOOK: ${book.book}\n\n`;
                     book.chapters.forEach(chap => {
                         txtContent += `Chapter ${chap.chapter}\n\n`;
-                        
+
                         chap.content.forEach((item, index) => {
-                            if(item.header !== undefined) {
+                            if (item.header !== undefined) {
                                 txtContent += `[ ${item.header} ]\n`;
                                 if (index < chap.content.length - 1) {
                                     txtContent += `\n`;
@@ -690,14 +917,14 @@
                     txtContent += "--------------------\n\n";
                 });
             });
-            
+
             const fileName = (data[0].title || 'bible') + '.txt';
             downloadFile(txtContent, fileName, 'text/plain');
         }
 
         function downloadFile(content, fileName, contentType) {
             const a = document.createElement("a");
-            const file = new Blob([content], {type: contentType});
+            const file = new Blob([content], { type: contentType });
             a.href = URL.createObjectURL(file);
             a.download = fileName;
             a.click();
@@ -716,7 +943,7 @@
             const colGap = 10;
             const colWidth = (210 - marginLeft - marginRight - colGap) / 2;
             const midX = 105;
-            
+
             let currentX = marginLeft;
             let currentY = marginTop;
             let currentCol = 0;
@@ -792,7 +1019,7 @@
                         }
 
                         const chapNum = chap.chapter.toString();
-                        
+
                         chap.content.forEach((item, idx) => {
                             if (hasTopHeader && idx === 0) return;
 
@@ -808,22 +1035,22 @@
                                 const isVerse1 = (item.verse === 1);
                                 const prefix = isVerse1 ? chapNum : item.verse.toString();
                                 const prefixFont = isVerse1 ? 'chapter' : 'verse-num';
-                                
+
                                 setFont(prefixFont);
                                 const prefixW = doc.getTextWidth(prefix);
                                 checkPageBreak(6);
                                 doc.text(prefix, currentX, currentY + 5);
-                                
+
                                 setFont('verse-text');
                                 const textLines = doc.splitTextToSize(item.text, colWidth - prefixW - 2);
                                 if (textLines.length > 0) doc.text(textLines[0], currentX + prefixW + 2, currentY + 5);
-                                
+
                                 for (let i = 1; i < textLines.length; i++) {
                                     currentY += 5;
                                     checkPageBreak(5);
                                     doc.text(textLines[i], currentX, currentY + 5);
                                 }
-                                currentY += 7; 
+                                currentY += 7;
                             }
                         });
                         currentY += emptyLine;
@@ -840,21 +1067,15 @@
         document.addEventListener('keydown', e => {
             if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 's') {
                 e.preventDefault();
-                const data = buildData();
-                
-                if (data.length > 1) {
-                    data.forEach(bible => {
-                        let jsonStr = JSON.stringify([bible], null, 2);
-                        jsonStr = jsonStr.replace(/},\n/g, "},\n\n");
-                        const fileName = (bible.title ? bible.title : 'BibleEngine_Project') + '.json';
-                        downloadFile(jsonStr, fileName, 'application/json');
-                    });
-                } else {
+                const bibles = document.querySelectorAll('.bible-wrapper');
+
+                bibles.forEach(bibleEl => {
+                    const data = buildLSBData(bibleEl);
+                    const bibleName = bibleEl.querySelector('.bible-name').value || 'BibleEngine_Project';
                     let jsonStr = JSON.stringify(data, null, 2);
-                    jsonStr = jsonStr.replace(/},\n/g, "},\n\n");
-                    const fileName = (data.length > 0 && data[0].title ? data[0].title : 'BibleEngine_Project') + '.json';
+                    const fileName = bibleName + '.json';
                     downloadFile(jsonStr, fileName, 'application/json');
-                }
+                });
             }
         });
 
@@ -865,8 +1086,9 @@
             }
         });
 
-        if(document.getElementById('bible-container').children.length === 0) addBibleUI();
+        if (document.getElementById('bible-container').children.length === 0) addBibleUI();
 
     </script>
 </body>
+
 </html>
